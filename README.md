@@ -29,6 +29,8 @@ Some prompts to answer:
 
 You can include a simple diagram or bullet list if helpful.
 
+  In my version, the 'Recommender' computes a score for each song by adding 2 points if the genre matches, 1.5 points if the mood matches, and up to 1 point if the energy matches. The higher the total number of points, the better the song fits. You choose what songs to recommend based on which is higher on the ranked list. The specific features the 'Song' and 'UserProfile' will include are genre and mood, and favorite genre and favorite mood, respectively.
+
 ---
 
 ## Getting Started
@@ -68,18 +70,32 @@ You can add more tests in `tests/test_recommender.py`.
 
 ## Sample Recommendation Output
 
-Paste a sample of your recommender's output here as a text block so a reader can see what it produces:
+Loaded songs: 15
 
-```
-# e.g.:
-# User profile: genre=indie, mood=chill, energy=low
-# Recommendations:
-#   1. ...
-#   2. ...
-#   3. ...
-```
+==================================================
+  TOP RECOMMENDATIONS
+  For: genre=pop, mood=happy, energy=0.8
+==================================================
 
-**Screenshot or video** *(optional)*: <!-- Insert a screenshot or demo video link here -->
+1. Sunrise City — Neon Echo
+   Score: 4.48
+   Reasons: genre match (pop) (+2.0), mood match (happy) (+1.5), energy closeness (0.82) (+0.98)
+
+2. Gym Hero — Max Pulse
+   Score: 2.87
+   Reasons: genre match (pop) (+2.0), energy closeness (0.93) (+0.87)
+
+3. Rooftop Lights — Indigo Parade
+   Score: 2.46
+   Reasons: mood match (happy) (+1.5), energy closeness (0.76) (+0.96)
+
+4. Concrete Dreams — MC Vertex
+   Score: 1.00
+   Reasons: energy closeness (0.80) (+1.00)
+
+5. Night Drive Loop — Neon Echo
+   Score: 0.95
+   Reasons: energy closeness (0.75) (+0.95)
 
 ---
 
