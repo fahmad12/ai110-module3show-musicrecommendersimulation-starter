@@ -13,6 +13,7 @@ Your goal is to:
 
 Replace this paragraph with your own summary of what your version does.
 
+  Done in "How the Model Works" section of model_card.md
 ---
 
 ## How The System Works
@@ -107,6 +108,10 @@ Use this section to document the experiments you ran. For example:
 - What happened when you added tempo or valence to the score
 - How did your system behave for different types of users
 
+  When the weight of the genre changed from 2.0 to 0.5, it gave more priority to the mood and recategorized based off that.
+
+  By adding a valence, it ranked the songs with happier tones higher than those without.
+
 ---
 
 ## Limitations and Risks
@@ -121,6 +126,9 @@ Examples:
 
 You will go deeper on this in your model card.
 
+  - Small pool of songs (small sample size)
+  - Results don't vary much
+
 ---
 
 ## Reflection
@@ -134,5 +142,5 @@ Write 1 to 2 paragraphs here about what you learned:
 - about how recommenders turn data into predictions
 - about where bias or unfairness could show up in systems like this
 
-
+  Done in model_card.md
 
